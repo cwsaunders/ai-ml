@@ -7,4 +7,5 @@ Current technologies in use:<br>
 <li>Python 3+</li>
 <li>Git Windows</li>
 <li>Bash</li>
+<li>Tensorflow 2.2</li>
 </ol>
