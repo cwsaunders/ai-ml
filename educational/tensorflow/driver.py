@@ -82,3 +82,16 @@ with tf.Session() as sess: <-- creates session using default graph
 tensorflow automatically evaluates tensor value
 more information in documentation
 '''
+
+# Other functions:
+'''
+t = tf.zeros([5,5,5,5,5]) <-- Same as 'ones' but with zeros -- creates Tensor of zeros following specified shape pattern
+'''
+
+# Basic code in use
+'''
+t = tf.zeros([5,5,5,5])
+print(t)
+t=tf.reshape(t,[625])
+print(t)
+'''
