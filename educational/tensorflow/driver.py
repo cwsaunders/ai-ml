@@ -50,8 +50,10 @@ tensor2 = tf.reshape(tensor1,[2,3,1]) <-- reshapes data, this produces:
     [1]
 ]
 i.g 2 lists containing 3 interior lists containing 1 element each
-tensor3 = tf.reshape(tensor2,[3,-1]) <-- reshapes data, this produces:
+tensor3 = tf.reshape(tensor2,[3,-1]) <-- reshapes data in a unique way. the -1 infers what the next number should be. i.g:
+[[1,1,1],[1,1,1]]
 
+this is probably the most simple/helpful method in this circumstance
 
 print(tensor1)
 print(tensor2)
