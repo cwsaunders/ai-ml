@@ -1,5 +1,11 @@
 import tensorflow as tf
 
+# Important resources
+'''
+https://www.tensorflow.org/
+https://www.youtube.com/watch?v=tPYj3fFJGjk
+'''
+
 # Version
 '''
 print(tf.version)
