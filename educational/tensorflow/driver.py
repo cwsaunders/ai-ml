@@ -5,7 +5,15 @@ import tensorflow as tf
 print(tf.version)
 '''
 
-# Creating Tensors
+# Tensor types:
+'''
+Variable --> Mutable
+Constant --> Immutable
+Placeholder --> Immutable
+Sparsetensor --> Immutable
+'''
+
+# Creating Variable Tensors
 '''
 string = tf.Variable("this is a string", tf.string)
 number = tf.Variable(333,tf.int16)
@@ -58,4 +66,13 @@ this is probably the most simple/helpful method in this circumstance
 print(tensor1)
 print(tensor2)
 print(tensor3)
+'''
+# Evaluating Tensors
+'''
+Basic template for evaluation:
+with tf.Session() as sess: <-- creates session using default graph
+    tensor.eval() <-- tensor is the name of your tensor
+
+tensorflow automatically evaluates tensor value
+more information in documentation
 '''
