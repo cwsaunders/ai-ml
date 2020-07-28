@@ -9,4 +9,8 @@ Current technologies in use:<br>
 <li>Bash</li>
 <li>Tensorflow 2.2</li>
 <li>scikit-learn 0.23.1</li>
+<li>Pandas</li>
+<li>numpy</li>
+<li>IPython</li>
+<li>matplotlib</li>
 </ol>
