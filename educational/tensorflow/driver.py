@@ -96,3 +96,11 @@ print(t)
 t=tf.reshape(t,[625])
 print(t)
 '''
+
+# Machine learning algorithms using Tensorflow
+'''
+Linear Regression:
+Using line of best fit to predict future x,y,z,etc values
+
+
+'''
