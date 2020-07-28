@@ -1,4 +1,5 @@
 import tensorflow as tf
+import sklearn
 
 # Important resources
 '''
@@ -10,6 +11,7 @@ https://colab.research.google.com/drive/1F_EWVKa8rbMXi3_fG0w7AtcscFq7Hi7B#forceE
 # Version
 '''
 print(tf.version)
+print(sklearn.__version__)
 '''
 
 # Tensor types:
@@ -100,7 +102,7 @@ print(t)
 # Machine learning algorithms using Tensorflow
 '''
 Linear Regression:
+y=mx+b
 Using line of best fit to predict future x,y,z,etc values
-
 
 '''

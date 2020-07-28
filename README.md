@@ -8,4 +8,5 @@ Current technologies in use:<br>
 <li>Git Windows</li>
 <li>Bash</li>
 <li>Tensorflow 2.2</li>
+<li>scikit-learn 0.23.1</li>
 </ol>
