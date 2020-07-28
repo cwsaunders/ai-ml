@@ -141,6 +141,8 @@ y_eval = dfeval.pop('survived')
 dftrain.age.hist(bins=20) # Histogram of age values
 dftrain.sex.value_counts().plot(kind='barh') # Bar graph of sex values
 dftrain['class'].value_counts().plot(kind='barh') # Bar graph of class values
+pd.concat([dftrain,y_train], axis=1).groupby('sex').survived.mean().plot(kind='barh').set_xlabel('% survive') # Bar graph of survival
+# ... rate by gender
 plt.show(block=False)
 plt.pause(10)
 plt.close()
