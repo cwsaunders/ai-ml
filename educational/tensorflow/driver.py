@@ -97,7 +97,7 @@ more information in documentation
 t = tf.zeros([5,5,5,5,5]) <-- Same as 'ones' but with zeros -- creates Tensor of zeros following specified shape pattern
 '''
 
-# Basic code in use
+# Basic code in use 
 '''
 t = tf.zeros([5,5,5,5])
 print(t)
@@ -112,3 +112,19 @@ y=mx+b
 Using line of best fit to predict future x,y,z,etc values
 
 '''
+
+# Misc notes
+'''
+.csv file extension == comma seperated values
+'''
+
+
+# ***************************************
+# Lines below indicate working code
+# ***************************************
+
+# Load dataset
+dftrain = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/train.csv') # Training data
+dfeval = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/eval.csv') # Testing data
+y_train = dftrain.pop('survived')
+y_eval = dfeval.pop('survived')
