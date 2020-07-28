@@ -118,6 +118,12 @@ Using line of best fit to predict future x,y,z,etc values
 .csv file extension == comma seperated values
 '''
 
+# Pandas
+'''
+head() method print first 5 columns of dataset
+describe() gives statistical analysis of dataset (mean, std, min, max, etc)
+'''
+
 
 # ***************************************
 # Lines below indicate working code
@@ -126,5 +132,16 @@ Using line of best fit to predict future x,y,z,etc values
 # Load dataset
 dftrain = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/train.csv') # Training data
 dfeval = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/eval.csv') # Testing data
+# Removing result data from metric data
 y_train = dftrain.pop('survived')
 y_eval = dfeval.pop('survived')
+
+# Graphs
+'''
+dftrain.age.hist(bins=20) # Histogram of age values
+dftrain.sex.value_counts().plot(kind='barh') # Bar graph of sex values
+dftrain['class'].value_counts().plot(kind='barh') # Bar graph of class values
+plt.show(block=False)
+plt.pause(10)
+plt.close()
+'''
