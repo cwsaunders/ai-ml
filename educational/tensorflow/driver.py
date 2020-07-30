@@ -124,6 +124,14 @@ head() method print first 5 columns of dataset
 describe() gives statistical analysis of dataset (mean, std, min, max, etc)
 '''
 
+# Numerical vs Categorical data
+'''
+Categorical == non numeric. i.g different categories such as male/female
+Numerical == Always represented in numbers
+
+All categorical data must be eventually changed into numeric data. So M/F could be turned into 0 or 1
+''
+
 
 # ***************************************
 # Lines below indicate working code
@@ -147,3 +155,4 @@ plt.show(block=False)
 plt.pause(10)
 plt.close()
 '''
+
