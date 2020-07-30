@@ -130,7 +130,7 @@ Categorical == non numeric. i.g different categories such as male/female
 Numerical == Always represented in numbers
 
 All categorical data must be eventually changed into numeric data. So M/F could be turned into 0 or 1
-''
+'''
 
 
 # ***************************************
