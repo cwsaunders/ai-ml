@@ -4,7 +4,7 @@ import tensorflow as tf
 import pandas as pd
 
 # Classification Tensorflow model to guess flower species
-tf.config.set_visible_devices([], 'GPU')
+
 # Input function
 def input_fn(features, labels, training=True, batch_size=256):
     # Convert the inputs to a Dataset.
