@@ -43,3 +43,11 @@ my_feature_columns = []
 for key in train.keys():
     my_feature_columns.append(tf.feature_column.numeric_column(key=key))
 print(my_feature_columns)
+
+# Build a DNN with 2 hidden layers with 30 and 10 hidden nodes each.
+classifier = tf.estimator.DNNClassifier(
+    feature_columns=my_feature_columns,
+    # Two hidden layers of 30 and 10 nodes respectively.
+    hidden_units=[30, 10],
+    # The model must choose between 3 classes.
+    n_classes=3)
