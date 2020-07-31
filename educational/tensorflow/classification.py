@@ -1,8 +1,10 @@
+from __future__ import absolute_import, division, print_function, unicode_literals
+
 import tensorflow as tf
 import pandas as pd
 
 # Classification Tensorflow model to guess flower species
-
+tf.config.set_visible_devices([], 'GPU')
 # Input function
 def input_fn(features, labels, training=True, batch_size=256):
     # Convert the inputs to a Dataset.
@@ -51,3 +53,8 @@ classifier = tf.estimator.DNNClassifier(
     hidden_units=[30, 10],
     # The model must choose between 3 classes.
     n_classes=3)
+
+# Training model
+classifier.train(
+    input_fn=lambda: input_fn(train, train_y, training=True),
+    steps=5000)
