@@ -122,6 +122,8 @@ Using line of best fit to predict future x,y,z,etc values
 '''
 head() method print first 5 columns of dataset
 describe() gives statistical analysis of dataset (mean, std, min, max, etc)
+linear_est.predict() gives dictionary data that represents predictions for all data points. 'probabilities' gives value of
+percent chance of y/n on given data point
 '''
 
 # Numerical vs Categorical data
@@ -192,7 +194,7 @@ linear_est = tf.estimator.LinearClassifier(feature_columns=feature_columns)
 
 # Training the model
 linear_est.train(train_input_fn)  # train
-result = linear_est.evaluate(eval_input_fn)  # get model metrics/stats by testing on tetsing data
+result = linear_est.evaluate(eval_input_fn)  # get model metrics/stats by testing on testing data
 
 clear_output()  # clears consoke output
 print(result['accuracy'])  # the result variable is simply a dict of stats about our model
