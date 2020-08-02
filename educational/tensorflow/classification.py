@@ -62,7 +62,7 @@ classifier.train(
 eval_result = classifier.evaluate(input_fn=lambda: input_fn(test, test_y, training=False))
 print('\nTest set accuracy: {accuracy:0.3f}\n'.format(**eval_result))
 
-# Predictions
+# Making Predictions
 '''
 def input_fn(features, batch_size=256):
     # Convert the inputs to a Dataset without labels.
