@@ -24,4 +24,16 @@ https://www.youtube.com/watch?v=tPYj3fFJGjk (2:18:40 for sketch)
 '''
 Where our current cluster is defined.
 the center of mass of a geometric object of uniform density.
+
+Using Euclidean distance (defined below) we can find all the dots (data points) proximity to different centroid points (in video
+example 3 points are used) and those points are assigned to those centroids based on proximity. Essentially assigning them
+into centroid groups
+
+'''
+# Euclidean / Manhattan distance
+'''
+In mathematics, the Euclidean distance or Euclidean metric is the "ordinary" straight-line distance between two points
+ in Euclidean space. 
+With this distance, Euclidean space becomes a metric space. The associated norm is called the Euclidean norm. 
+Older literature refers to the metric as the Pythagorean metric.
 '''
