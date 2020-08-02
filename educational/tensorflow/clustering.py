@@ -17,6 +17,11 @@ Basic Algorithm for K-Means.
 
 Sources:
 https://colab.research.google.com/drive/15Cyy2H7nT40sGR7TBN5wBvgTd57mVKay#forceEdit=true&sandboxMode=true&scrollTo=d0dfaT4esRh3
-https://www.youtube.com/watch?v=tPYj3fFJGjk
+https://www.youtube.com/watch?v=tPYj3fFJGjk (2:18:40 for sketch)
 
+'''
+# Centroid
+'''
+Where our current cluster is defined.
+the center of mass of a geometric object of uniform density.
 '''
