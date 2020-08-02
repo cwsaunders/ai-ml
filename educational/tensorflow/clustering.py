@@ -28,6 +28,10 @@ the center of mass of a geometric object of uniform density.
 Using Euclidean distance (defined below) we can find all the dots (data points) proximity to different centroid points (in video
 example 3 points are used) and those points are assigned to those centroids based on proximity. Essentially assigning them
 into centroid groups
+THEN
+all the centroids are moved to the middle of all their graphed data points (center of mass)
+THEN
+the process repeats and the data points are re-assigned to their closest centroid
 
 '''
 # Euclidean / Manhattan distance
