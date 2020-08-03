@@ -1,0 +1,7 @@
+1 tensorflow in practice on coursera (youtube version available)
+2 hands on machine learning with tensorflow, keras, and scikit-learn (neural networks section is relevant (read for free on github)
+3 introduction to deep learning by MIT (first three lectures of the series on youtube is most relevant to certification)
+4 exam takes place in pycharm
+5 introtodeeplearning.com
+
+https://www.youtube.com/watch?v=ya5NwvKafDk
