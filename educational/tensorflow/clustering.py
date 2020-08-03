@@ -33,6 +33,9 @@ all the centroids are moved to the middle of all their graphed data points (cent
 THEN
 the process repeats and the data points are re-assigned to their closest centroid
 
+Once the process ceases we have the correct clusters. Therefore, when the new clusters are assigned it is easy to find where additions
+to the graph would fit. i.g any new additions to the graph are added to their closest centroid/cluster
+
 '''
 # Euclidean / Manhattan distance
 '''
@@ -40,4 +43,10 @@ In mathematics, the Euclidean distance or Euclidean metric is the "ordinary" str
  in Euclidean space. 
 With this distance, Euclidean space becomes a metric space. The associated norm is called the Euclidean norm. 
 Older literature refers to the metric as the Pythagorean metric.
+'''
+
+# Determining K (number of centroids/clusters)
+'''
+Source:
+https://www.geeksforgeeks.org/ml-determine-the-optimal-value-of-k-in-k-means-clustering/#:~:text=There%20is%20a%20popular%20method,fewer%20elements%20in%20the%20cluster.
 '''
