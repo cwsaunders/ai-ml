@@ -24,5 +24,6 @@ a 60% chance of being happy and a 40% chance of being sad.
 
 # Transition
 '''
-
+Each state has a probability that defining the likelihood of transitioning to a different state. i.g If you have three hot days in a row
+their is a 57% chance of a fourth hot day and a 43% chance of a cold day.
 '''
