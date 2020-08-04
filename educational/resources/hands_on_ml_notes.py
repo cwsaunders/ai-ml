@@ -18,4 +18,19 @@ elements such as variable or function names, databases, data types, environment 
 
 3. Constant width bold Shows commands or other text that should be typed literally by the user.
 4. Constant width italic Shows text that should be replaced with user-supplied values or by values determined by context.
+
+Note that when the code examples display some outputs, then these code examples are shown with Python prompts (>>> and ...), as in a Python shell, to clearly distinguish the code from the outputs. For example, this code defines the square() function then it computes and displays the square of 3:
+>>> def square(x):
+ ...     return x ** 2 
+ ... 
+ >>> result = square(3) 
+ >>> result 
+ 9
 '''
+
+# Additional internal material
+'''
+Supplemental material (code examples, exercises, etc.) is available for download at https://github.com/ageron/handson-ml2
+'''
+
+# 
