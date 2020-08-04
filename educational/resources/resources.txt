@@ -1,5 +1,5 @@
 1 tensorflow in practice on coursera (youtube version available - deeplearning.ai youtube channel -
-https://www.youtube.com/watch?v=eqEc66RFY0I&list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0&index=7 on this youtube video)
+Video: C01L02V01)
 2 hands on machine learning with tensorflow, keras, and scikit-learn (neural networks section is relevant (read for free on github))
 Current page: 
 3 introduction to deep learning by MIT (first three lectures of the series on youtube is most relevant to certification - 
