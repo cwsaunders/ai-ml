@@ -33,4 +33,14 @@ Note that when the code examples display some outputs, then these code examples 
 Supplemental material (code examples, exercises, etc.) is available for download at https://github.com/ageron/handson-ml2
 '''
 
+# Decreasing performance over time
+'''
+If an algorithm is learning live (e.g google) it may be susceptible to decreasing in performance. This may be due to
+a malicious user feeding bad data into the algorithm. e.g someone spamming google.com with searches for their site to increase
+their ranking. A decrease in performance may also simply be due to bad data. Actions that may be taken to mitigate this:
+1. implementing an anomoly-detection algorithm
+2. temporarily turning off learning 
+3. reverting to a prior state
+'''
+
 # 
