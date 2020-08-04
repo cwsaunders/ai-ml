@@ -43,7 +43,7 @@ their ranking. A decrease in performance may also simply be due to bad data. Act
 3. reverting to a prior state
 '''
 
-# Example code to create GDP to happiness model
+# Example code to create GDP to happiness model -- linear regression
 '''
 import matplotlib.pyplot as plt
 import numpy as np
@@ -75,4 +75,16 @@ X_new = [[22587]] # Cyprus GDP / capita
 print(model.predict(X_new)) # Output 
 '''
 
-# 
+# k-Nearest Neighbors regression
+'''
+The prior example code would create a k-nearest neighbors regression model simply by replacing these two lines:
+import sklearn.linear_model
+model = sklearn.linear_model.LinearRegression() 
+
+with these two lines:
+
+import sklearn.neighbors
+model = sklearn.neighbors.KNeighborsRegressor(n_neighbors=3)
+'''
+
+
