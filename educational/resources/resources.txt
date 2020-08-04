@@ -8,3 +8,9 @@ Current lecture:
 4 exam takes place in pycharm
 
 https://www.youtube.com/watch?v=ya5NwvKafDk
+
+Daily ML schedule:
+1 deeplearning.ai course
+2 Hands on Machine Learning book
+3 Hands on coding
+4 MIT course
