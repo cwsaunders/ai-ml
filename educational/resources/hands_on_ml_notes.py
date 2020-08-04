@@ -44,7 +44,7 @@ their ranking. A decrease in performance may also simply be due to bad data. Act
 '''
 
 # Example code to create GDP to happiness model
-
+'''
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -73,3 +73,6 @@ model.fit(X,y)
 # Make a prediction for Cyprus
 X_new = [[22587]] # Cyprus GDP / capita
 print(model.predict(X_new)) # Output 
+'''
+
+# 
