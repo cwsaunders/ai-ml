@@ -9,7 +9,7 @@ Current lecture:
 
 https://www.youtube.com/watch?v=ya5NwvKafDk
 
-Daily ML schedule:
+Daily Python-ML schedule:
 1 deeplearning.ai course
 2 Hands on Machine Learning book
 3 Hands on coding
