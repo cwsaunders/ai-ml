@@ -100,6 +100,12 @@ If you set the regularization hyperparameter to a very large value, you will get
 the learning algorithm will almost certainly not overfit the training data, but it will be less likely to find a good solution.
 Tuning hyperparameters is an important part of building a Machine Learning system 
 (you will see a detailed example in the next chapter). 
+
+Notes on tuning p. 58
+
+holdout validation is a good solution for tuning. (p. 58)
+e.g holdout validation is when you hold out a part of the training set to evaluate several candidate models and select the best one.
+the new heldout set is called the validation set. (sometimes development set/dev set)
 '''
 
 # Testing and Validating
@@ -117,3 +123,11 @@ If the training error is low (i.e., your model makes few mistakes on the trainin
 it means that your model is overfitting the training data.
 '''
 
+# Train-Dev Set
+'''
+Popularized by Andrew Ng, described on p. 59
+
+Method for testing if your model is properly assessing data that will affect your use-case or data you collected from another source.
+'''
+
+# 
