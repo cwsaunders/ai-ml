@@ -87,4 +87,20 @@ import sklearn.neighbors
 model = sklearn.neighbors.KNeighborsRegressor(n_neighbors=3)
 '''
 
+# Regularization
+'''
+Constraining a model to make it simpler and reduce the risk of overfitting is called regularization
+'''
+
+# Hyperparameter
+'''
+A hyperparameter is a parameter of a learning algorithm (not of the model). 
+As such, it is not affected by the learning algorithm itself; it must be set prior to training and remains constant during training.
+If you set the regularization hyperparameter to a very large value, you will get an almost flat model (a slope close to zero);
+the learning algorithm will almost certainly not overfit the training data, but it will be less likely to find a good solution.
+Tuning hyperparameters is an important part of building a Machine Learning system 
+(you will see a detailed example in the next chapter). 
+'''
+
+# 
 
