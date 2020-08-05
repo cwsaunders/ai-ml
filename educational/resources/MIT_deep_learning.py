@@ -74,20 +74,20 @@ while True:
     optimizer.apply_gradients(zip(grads,model.trainable_variables))
     '''
 
-    # How to avoid 'memorization'
-    '''
-    "Regularization" techniques are used to avoid model memorization of training data. This memorization creates an
-    'over-fitting' of the data. (seen in the graph around 48:20)
+# How to avoid 'memorization'
+'''
+"Regularization" techniques are used to avoid model memorization of training data. This memorization creates an
+'over-fitting' of the data. (seen in the graph around 48:20)
 
-    Regularization I: During training, randomly set some activations to 0.
-    Typically drop 50% of activations in layer
-    Forces network to not rely on any 1 node.
-    Works best with multiple iterations (one round of randomly selected activations, another round of another set, etc)
-    Implementation:
-    tf.keras.layers.Dropout(p=0.5)
+Regularization I: During training, randomly set some activations to 0.
+Typically drop 50% of activations in layer
+Forces network to not rely on any 1 node.
+Works best with multiple iterations (one round of randomly selected activations, another round of another set, etc)
+Implementation:
+tf.keras.layers.Dropout(p=0.5)
 
-    Regularization 2: Early Stopping
-    
+Regularization 2: Early Stopping
 
 
-    '''
+
+'''
