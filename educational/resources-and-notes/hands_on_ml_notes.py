@@ -102,5 +102,18 @@ Tuning hyperparameters is an important part of building a Machine Learning syste
 (you will see a detailed example in the next chapter). 
 '''
 
-# 
+# Testing and Validating
+'''
+Split your data into two sets:
+the training set and the test set.
+As these names imply, you train your model using the training set, and you test it using the test set.
+
+
+The error rate on new cases is called the generalization error (or out-ofsample error).
+By evaluating your model on the test set, you get an estimate of this error.
+
+
+If the training error is low (i.e., your model makes few mistakes on the training set) but the generalization error is high,
+it means that your model is overfitting the training data.
+'''
 
