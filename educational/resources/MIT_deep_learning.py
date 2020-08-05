@@ -43,10 +43,10 @@ Non-fixed learning rate. Made smaller or larger based on:
 4. etc.
 
 Implementation:
-SGD: tf.keras.optimizers.SGD -- (NON-ADAPTIVE)
-Adam: tf.keras.optimizers.Adam -- (ADAPTIVE)
-Adadelta: tf.keras.optimizers.Adadelta -- (ADAPTIVE)
-Adagrad: tf.keras.optimizers.Adagrad -- (ADAPTIVE)
-RMSProp: tf.keras.optimizers.RMSProp -- (ADAPTIVE)
+SGD: tf.keras.optimizers.SGD() -- (NON-ADAPTIVE)
+Adam: tf.keras.optimizers.Adam() -- (ADAPTIVE)
+Adadelta: tf.keras.optimizers.Adadelta() -- (ADAPTIVE)
+Adagrad: tf.keras.optimizers.Adagrad() -- (ADAPTIVE)
+RMSProp: tf.keras.optimizers.RMSProp() -- (ADAPTIVE)
 
 '''
