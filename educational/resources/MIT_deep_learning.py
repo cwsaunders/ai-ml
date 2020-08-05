@@ -50,3 +50,41 @@ Adagrad: tf.keras.optimizers.Adagrad() -- (ADAPTIVE)
 RMSProp: tf.keras.optimizers.RMSProp() -- (ADAPTIVE)
 
 '''
+
+# 'Putting it all together'
+'''
+import tensorflow as tf
+
+model = tf.Keras.Sequential([...])
+
+# Optimizer
+optimizer = tf.keras.optimizer.SGD()
+
+while True:
+
+    # Forward pass through network
+    prediction = model(x)
+
+    with tf.GradientTape() as tape:
+        # Compute loss
+        loss = compute_loss(y, prediction)
+
+    # Update weights using gradient
+    grads = tape.gradient(loss,model.trainable_variables)
+    optimizer.apply_gradients(zip(grads,model.trainable_variables))
+    '''
+
+    # How to avoid 'memorization'
+    '''
+    "Regularization" techniques are used to avoid model memorization of training data. This memorization creates an
+    'over-fitting' of the data. (seen in the graph around 48:20)
+
+    Regularization I: During training, randomly set some activations to 0.
+    Typically drop 50% of activations in layer
+    Forces network to not rely on any 1 node.
+    Implementation:
+    tf.keras.layers.Dropout(p=0.5)
+
+    
+
+    '''
