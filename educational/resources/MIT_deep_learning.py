@@ -87,7 +87,22 @@ Implementation:
 tf.keras.layers.Dropout(p=0.5)
 
 Regularization 2: Early Stopping
+Stop training before the model has a chance to overfit (memorize data)
+e.g at a certain point the training data will start to outperform the testing data
+Helpful graph in the video: 51:41
 
 
 
+'''
+
+# Lesson 1 Summary
+'''
+Core foundation:
+Structural building blocks
+nonlinear activation functions
+stacking perceptrons to form neural networks
+Optimization through backpropagation
+adaptive learning
+batching
+regularization
 '''
