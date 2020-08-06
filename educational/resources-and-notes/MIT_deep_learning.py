@@ -223,4 +223,16 @@ W hy == hidden state output (rnn_units == hidden state/h, y == output_dim)
 tf.Keras.layers.SimpleRNN(rnn_units)
 ^^
 implemented these type of RNN layers for us (code in 2 prior note segments ago), and it is called SimpleRNN (see above)
+
+tf.Keras.layers.LSTM(num_units)
+^^
+LSTM implementation. -- LSTM cells are able to track information throughout many timesteps
+'''
+
+# Long Short Term Memory (LSTM) Networks
+'''
+Well suited to learning long-term dependencies to overcome vanishing gradient problem. (e.g long sentences that require
+knowledge of multiple sections of the sentence)
+
+
 '''
