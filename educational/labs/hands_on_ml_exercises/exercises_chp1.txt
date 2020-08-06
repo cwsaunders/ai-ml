@@ -1,0 +1,33 @@
+1. Machine learning is the study of computer algorithms that improve automatically through experience. It is seen as a subset of artificial intelligence.
+
+2. a) Medical diagnosis
+b) Trend analysis
+c) Online advertising
+d) Social media optimization
+
+3. Labeled data is a group of samples that have been tagged with one or more labels.
+Labeling typically takes a set of unlabeled data and augments each piece of that unlabeled data with meaningful tags that are informative
+
+4. classification, regression
+
+5.  clustering, association rule learning, neural networks, anomoly detection
+
+6. reinforcement learning
+
+7. clustering
+
+8. supervised
+
+9. Something that learns with real time data. e.g users reporting spam messages to the system, and that system learning from the new
+reports
+
+10. Online learning algorithms can also be used to train systems on huge datasets that cannot fit in one machine’s main memory
+(this is called out-of-core learning). 
+The algorithm loads part of the data, runs a training step on that data, and repeats the process until it has run on all of the data 
+
+11. instance based learning
+
+12. A hyperparameter is a parameter of a learning algorithm (not of the model). 
+As such, it is not affected by the learning algorithm itself; it must be set prior to training and remains constant during training.
+
+13. 
