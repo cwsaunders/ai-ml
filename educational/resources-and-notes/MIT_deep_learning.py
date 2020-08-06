@@ -167,6 +167,12 @@ for word in sentence:
 
 next_word_prediction = prediction
 
+
+Back to notes:
+
+loss may be computed at every iteration, which will then be summed up into a total loss.
+
+
 '''
 
 # Implementing RNN from scratch in Tensorflow
