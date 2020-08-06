@@ -175,7 +175,7 @@ class MyRNNCell(tf.keras.layers.Layer):
     def __init__(self,rnn_units,input_dim,_output_dim):
         super(MyRNNCell,self).__init__()
     
-    # Initialize weight matrices
+    # Initialize weight matrices (Graph at video 2 17:59)
     self.W_xh = self.add_weight([rnn_units,input_dim])
     self.W_hh = self.add_weight([rnn_units,rnn_units])
     self.W_hy = self.add_weight([_output_dim,rnn_units])
@@ -192,4 +192,21 @@ class MyRNNCell(tf.keras.layers.Layer):
 
         # Return the current output and hidden state
         return output,self.h
+'''
+
+# Intuition turning into implementation
+'''
+14:00 - 20:00 area on video 2 goes through this.
+
+Graph at 17:56 (and information directly before it) describe weight matrices
+
+h of t == internal state
+
+W xh == transform input to hidden state (rnn_units == hidden state/h, input_dim == input/x)
+
+W hh == transform previous hidden state to current hidden state (rnn_units == hidden state/h)
+
+W hy == hidden state output (rnn_units == hidden state/h, y == output_dim)
+
+
 '''
