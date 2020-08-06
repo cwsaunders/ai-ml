@@ -30,4 +30,32 @@ The algorithm loads part of the data, runs a training step on that data, and rep
 12. A hyperparameter is a parameter of a learning algorithm (not of the model). 
 As such, it is not affected by the learning algorithm itself; it must be set prior to training and remains constant during training.
 
-13. 
+13. Model-based learning algorithms search for an optimal value for the model parameters such that the model will generalize well
+to new instances. 
+We usually train such systems by minimizing a cost function that measures how bad the system is at making predictions on the
+training data, plus a penalty for model complexity if the model is regularized. To make predictions, we feed the new instances’
+features into the model’s prediction function, using the parameter values found by the learning algorithm.
+
+14. a) lack of data
+b) lack of computing power
+c) lack of quality data
+d) the search for the most efficient algorithms
+
+15. a) If a model performs great on the training data but generalizes poorly to new instances,
+the model is likely overfitting the training data (or we got extremely lucky on the training data).
+Possible solutions to overfitting are getting more data, simplifying the model
+(selecting a simpler algorithm, reducing the number of parameters or features used, or regularizing the model),
+or reducing the noise in the training data.
+
+16. Test sets are somewhat self explanatory, they test the model to make sure it performs well.
+This can expose problems in the algorithm such as over or underfitting.
+
+17. holdout validation is when you hold out a part of the training set to evaluate several candidate models and select the best one.
+the new heldout set is called the validation set. (sometimes development set/dev set)
+
+18. If you tune hyperparameters using the test set, you risk overfitting the test set,
+and the generalization error you measure will be optimistic (you may launch a
+model that performs worse than you expect).
+
+19. Using many small validation sets. Each model is evaluated once per validation set, after it is trained on the rest of the data.
+By averaging out all the evaluations of a model, we get a much more accurate measure of its performance.
