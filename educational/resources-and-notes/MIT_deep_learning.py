@@ -238,9 +238,11 @@ Information is added or removed through structures called gates. (video #2 31:30
 through. For example via a sigmoid neural net later and pointwise multiplication (video #2 31:43 graph)
 
 Information processing steps through LSTM:
-1. Forget irrelevant history
+1. Forget irrelevant history e.g unimport words within a sentance. 
 2. perform computation to store relevant new information
 3. use first two steps to selectively update their internal state
 4. generate output
+
+
 
 '''
