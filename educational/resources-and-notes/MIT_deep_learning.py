@@ -132,7 +132,20 @@ Solution: Recurrent neural network. (RNN)
 
 '''
 
+# Standard Feed-Forward NN
+'''
+Cannot handle sequential data. as explained in prior notes about why we must use recurrent neural networks instead.
+'''
+
 # Recurrent Neural Network
 '''
+Ideal for sequential data. 
+
+Sequential data: text, audio, etc.
+
+How is the data looped?
+Apply a recurrence relation at every time step to process a sequence: h<t>=f<w>(h<t-1>,x<t>) <-- "<>" for subscript
+
+
 
 '''
