@@ -169,7 +169,7 @@ next_word_prediction = prediction
 
 
 Back to notes:
-
+Loss:
 loss may be computed at every iteration, which will then be summed up into a total loss.
 
 
