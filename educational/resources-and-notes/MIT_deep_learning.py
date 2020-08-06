@@ -248,10 +248,17 @@ Summary:
 1. Able to maintain seperate cell state from what is outputted
 2. uses gates to control the flow of information - storing, forgetting, updating, outputting
 3. backpropogation through time with uninterrupted gradient flow
+4. RNNs are well suited for sequence modeling tasks
+
 
 RNN Applications (Practical):
 1. Music: predicting next musical note. Also being used to create new music with this process.
-2. 
+2. Sentiment Classification -- sentiment analysis (emotions) -- using text.
+3. Machine translation -- one of the most powerful and widely used -- google translate is a type of RNN. (Also uses attention mechanism)
+Starts with encoder (original language), then decoder (next language). 
+4. weather models
+5. autonomous vehicles
+
 
 
 '''
