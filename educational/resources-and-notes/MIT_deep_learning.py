@@ -234,5 +234,8 @@ LSTM implementation. -- LSTM cells are able to track information throughout many
 Well suited to learning long-term dependencies to overcome vanishing gradient problem. (e.g long sentences that require
 knowledge of multiple sections of the sentence)
 
+Information is added or removed through structures called gates. (video #2 31:30) Gates optionally let information
+through. For example via a sigmoid neural net later and pointwise multiplication (video #2 31:43 graph)
+
 
 '''
