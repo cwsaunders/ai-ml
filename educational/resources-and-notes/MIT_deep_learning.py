@@ -146,6 +146,50 @@ Sequential data: text, audio, etc.
 How is the data looped?
 Apply a recurrence relation at every time step to process a sequence: h<t>=f<w>(h<t-1>,x<t>) <-- "<>" for subscript
 
+h<t> == cell state
 
+f<w> == function paramaterized by W (weights) <-- same set of weights and parameters are used in every step of the process
 
+h<t-1> == old state
+
+x<t> == input vector at time step t
+
+Example psuedo code:
+
+my_rnn = RNN()
+
+hidden_state = [0,0,0,0]
+
+sentence = ['I','love','recurrent','neural']
+
+for word in sentence:
+    prediction, hidden_state = my_rnn(word,hidden_state)
+
+next_word_prediction = prediction
+
+'''
+
+# Implementing RNN from scratch in Tensorflow
+'''
+class MyRNNCell(tf.keras.layers.Layer):
+    def __init__(self,rnn_units,input_dim,_output_dim):
+        super(MyRNNCell,self).__init__()
+    
+    # Initialize weight matrices
+    self.W_xh = self.add_weight([rnn_units,input_dim])
+    self.W_hh = self.add_weight([rnn_units,rnn_units])
+    self.W_hy = self.add_weight([_output_dim,rnn_units])
+
+    # Initialize hidden state to zeros
+    self.h = tf.zeros([rnn_units, 1])
+
+    def call(self,x):
+        # Update the hidden state
+        self.h = tf.math.tanh(self.W_hh*self.h+self.W_xh*x)
+
+        # Compute the output
+        output = self.W_hy * self.h
+
+        # Return the current output and hidden state
+        return output,self.h
 '''
