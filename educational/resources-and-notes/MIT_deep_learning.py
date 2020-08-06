@@ -194,6 +194,7 @@ class MyRNNCell(tf.keras.layers.Layer):
         self.h = tf.math.tanh(self.W_hh*self.h+self.W_xh*x)
 
         # Compute the output
+        # transformed version of hidden state -- at each time step we return current output and updated hidden state
         output = self.W_hy * self.h
 
         # Return the current output and hidden state
@@ -215,4 +216,11 @@ W hh == transform previous hidden state to current hidden state (rnn_units == hi
 W hy == hidden state output (rnn_units == hidden state/h, y == output_dim)
 
 
+'''
+
+# More implementation
+'''
+tf.Keras.layers.SimpleRNN(rnn_units)
+^^
+implemented these type of RNN layers for us (code in 2 prior note segments ago), and it is called SimpleRNN (see above)
 '''
