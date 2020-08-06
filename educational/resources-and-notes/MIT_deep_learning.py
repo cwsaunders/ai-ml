@@ -243,6 +243,15 @@ Information processing steps through LSTM:
 3. use first two steps to selectively update their internal state
 4. generate output
 
+Summary:
+
+1. Able to maintain seperate cell state from what is outputted
+2. uses gates to control the flow of information - storing, forgetting, updating, outputting
+3. backpropogation through time with uninterrupted gradient flow
+
+RNN Applications (Practical):
+1. Music: predicting next musical note. Also being used to create new music with this process.
+2. 
 
 
 '''
