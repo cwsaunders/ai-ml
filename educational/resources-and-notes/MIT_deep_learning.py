@@ -107,7 +107,32 @@ batching
 regularization
 '''
 
-# 
+# Sequence modeling
+'''
+NLP: 
+
+One of the problems with NLP is that the input can have varying length when trying to predict future words.
+e.g i took my cat for a walk (7 words)
+vs i like calculus (3 words)
+
+'Ideas' to solve this problem:
+1. Use a fixed window. e.g only look at a certain number of words prior to the word we are predicting. (2, 3, etc)
+However, because we are using this fixed window it is very limiting to our prediction. Some data is only available
+earlier in sentences. This is not a good option.
+2. Bag of words: each slot in input vector represents a word and the value in the slot represents
+the number of times a word appears in the sentence. (6:40 video #2)
+However, their is another problem with this. The count does not necesarily denote a proper meaning for the sentence.
+3. extend fixed window, look at more words. however, this causes problems with the networks learning. 
+
+To model sequences we need to:
+1. develop models that handle variable length, track long term dependencies in data, maintain information about sequences order,
+share parameters across the entirety of the sequence.
+
+Solution: Recurrent neural network. (RNN)
+
+'''
+
+# Recurrent Neural Network
 '''
 
 '''
