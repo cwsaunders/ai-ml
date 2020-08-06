@@ -106,3 +106,8 @@ adaptive learning
 batching
 regularization
 '''
+
+# 
+'''
+
+'''
