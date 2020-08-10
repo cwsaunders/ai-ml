@@ -33,8 +33,25 @@ Note that when the code examples display some outputs, then these code examples 
 m == the number of instances in the dataset you are measuring the RMSE on. 
 For example, if you are evaluating the RMSE on a validation set of 2,000 districts, then m = 2,000
 
-x^i and y^i == x^i is a vector of all the feature values (excluding the label) of the ith instance in the dataset, and y(i) is its label
+x^(i) and y^(i) == x^i is a vector of all the feature values (excluding the label) of the ith instance in the dataset, and y(i) is its label
 (the desired output value for that instance).
+For example, if the first district in the dataset is located at longitude –118.29°, latitude 33.91°, and it has 1,416 inhabitants with a median income of $38,372, and the median house value is $156,400 (ignoring the other features for now), then:
+x^(1) = −118.29, 33.91, 1,416, 38,372
+y^(1) = 156,400
+
+X is a matrix containing all the feature values (excluding labels) of all instances in the dataset.
+There is one row per instance and the ith row is equal to the transpose of x(i), noted (x(i))T.4 —For example,
+if the first district is as just described, then the matrix X looks like this:
+X =
+(x^(1))^T
+(x^(2))^T
+⋮
+(x^(1999))^T
+(x^(2000))^T
+=
+−118.29 33.91 1,416 38,372
+            ⋮ ⋮ ⋮ ⋮
+
 '''
 
 # Additional internal material
