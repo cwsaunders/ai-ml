@@ -211,11 +211,16 @@ and the data is small enough to fit in memory, so plain batch learning should do
 
 # Selecting a performance measure
 '''
+Root Mean Square Error (RMSE):
 Your next step is to select a performance measure.
 A typical performance measure for regression problems is the Root Mean Square Error (RMSE).
 It gives an idea of how much error the system typically makes in its predictions, with a higher weight for large errors.
 Equation 2-1 shows the mathematical formula to compute the RMSE. (P. 68)
 
+Mean Absolute Error:
+Even though the RMSE is generally the preferred performance measure for regression tasks,
+in some contexts you may prefer to use another function. For example, suppose that there are many outlier districts.
+In that case, you may consider using the Mean Absolute Error (also called the Average Absolute Deviation; see Equation 2-2). (P. 70)
 '''
 
 
