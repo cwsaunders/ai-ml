@@ -60,6 +60,11 @@ The prediction error for this district is ŷ(1) – y(1) = 2,000
 
 RMSE(X,h) == the cost function measured on the set of examples using your hypothesis h. 
 
+Misc:
+
+We use lowercase italic font for scalar values (such as m or y(i)) and function names (such as h),
+lowercase bold font for vectors (such as x(i)), and uppercase bold font for matrices (such as X).
+
 '''
 
 # Additional internal material
