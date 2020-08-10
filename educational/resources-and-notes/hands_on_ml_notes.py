@@ -148,4 +148,33 @@ Method for testing if your model is properly assessing data that will affect you
  —Datasets subreddit 
 '''
 
-# 
+# ***************************
+# End-To-End Project
+
+# Picking a model for your project
+'''
+Real estate example:
+Okay, with all this information you are now ready to start designing your system.
+First, you need to frame the problem: is it supervised, unsupervised, or Reinforcement Learning?
+Is it a classification task, a regression task, or something else? Should you use batch learning or online learning techniques?
+Before you read on, pause and try to answer these questions for yourself. Have you found the answers?
+Let’s see: it is clearly a typical supervised learning task since you are given labeled training examples
+(each instance comes with the expected output, i.e., the district’s median housing price).
+Moreover, it is also a typical regression task, since you are asked to predict a value.
+More specifically, this is a multiple regression problem since the system will use multiple features to make a prediction
+(it will use the district’s population, the median income, etc.).
+It is also a univariate regression problem since we are only trying to predict a single value for each district.
+If we were trying to predict multiple values per district, it would be a multivariate regression problem.
+Finally, there is no continuous flow of data coming in the system, there is no particular need to adjust to changing data rapidly,
+and the data is small enough to fit in memory, so plain batch learning should do just fine.
+
+'''
+
+# Selecting a performance measure
+'''
+
+'''
+
+
+# End
+# ***********************
