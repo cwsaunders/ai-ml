@@ -28,6 +28,15 @@ Note that when the code examples display some outputs, then these code examples 
  9
 '''
 
+# Notation
+'''
+m == the number of instances in the dataset you are measuring the RMSE on. 
+For example, if you are evaluating the RMSE on a validation set of 2,000 districts, then m = 2,000
+
+x^i and y^i == x^i is a vector of all the feature values (excluding the label) of the ith instance in the dataset, and y(i) is its label
+(the desired output value for that instance).
+'''
+
 # Additional internal material
 '''
 Supplemental material (code examples, exercises, etc.) is available for download at https://github.com/ageron/handson-ml2
