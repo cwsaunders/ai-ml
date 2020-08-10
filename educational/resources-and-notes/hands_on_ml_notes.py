@@ -216,11 +216,23 @@ Your next step is to select a performance measure.
 A typical performance measure for regression problems is the Root Mean Square Error (RMSE).
 It gives an idea of how much error the system typically makes in its predictions, with a higher weight for large errors.
 Equation 2-1 shows the mathematical formula to compute the RMSE. (P. 68)
+Computing the root of a sum of squares (RMSE) corresponds to the Euclidean norm: it is the notion of distance you are familiar with.
+It is also called the ℓ2 norm, noted ∥ · ∥2 (or just ∥ · ∥). 
 
-Mean Absolute Error:
+Mean Absolute Error (MAE):
 Even though the RMSE is generally the preferred performance measure for regression tasks,
 in some contexts you may prefer to use another function. For example, suppose that there are many outlier districts.
 In that case, you may consider using the Mean Absolute Error (also called the Average Absolute Deviation; see Equation 2-2). (P. 70)
+Computing the sum of absolutes (MAE) corresponds to the ℓ1 norm, noted ∥ · ∥1.
+It is sometimes called the Manhattan norm because it measures the distance between two points in a city if you can only
+travel along orthogonal city blocks. 
+
+Extra info:
+Both the RMSE and the MAE are ways to measure the distance between two vectors:
+the vector of predictions and the vector of target values. Various distance measures, or norms, are possible
+
+The higher the norm index, the more it focuses on large values and neglects small ones.
+This is why the RMSE is more sensitive to outliers than the MAE.
 '''
 
 
