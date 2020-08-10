@@ -130,4 +130,22 @@ Popularized by Andrew Ng, described on p. 59
 Method for testing if your model is properly assessing data that will affect your use-case or data you collected from another source.
 '''
 
+# Dataset locations for practice
+'''
+ Popular open data repositories:
+ —UC Irvine Machine Learning Repository
+ —Kaggle datasets
+ —Amazon’s AWS datasets
+
+ • Meta portals (they list open data repositories):
+ —http://dataportals.org/
+ —http://opendatamonitor.eu/
+ —http://quandl.com/
+
+ • Other pages listing many popular open data repositories:
+ —Wikipedia’s list of Machine Learning datasets
+ —https://www.quora.com/Where-can-I-find-large-datasets-open-to-the-public
+ —Datasets subreddit 
+'''
+
 # 
