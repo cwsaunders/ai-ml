@@ -52,6 +52,14 @@ X =
 −118.29 33.91 1,416 38,372
             ⋮ ⋮ ⋮ ⋮
 
+h == your system’s prediction function, also called a hypothesis.
+When your system is given an instance’s feature vector x(i), it outputs a predicted value ŷ(i) = h(x(i)) for that instance
+(ŷ is pronounced “y-hat”).
+For example, if your system predicts that the median housing price in the first district is $158,400, then ŷ(1) = h(x(1)) = 158,400.
+The prediction error for this district is ŷ(1) – y(1) = 2,000
+
+RMSE(X,h) == the cost function measured on the set of examples using your hypothesis h. 
+
 '''
 
 # Additional internal material
