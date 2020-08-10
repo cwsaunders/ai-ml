@@ -235,6 +235,21 @@ The higher the norm index, the more it focuses on large values and neglects smal
 This is why the RMSE is more sensitive to outliers than the MAE.
 '''
 
+# Checking Assumptions
+'''
+See page 71
+'''
+
+# Initial Technical Steps for Chp 2 Project
+'''
+1. Get the data
+2. Create the workspace
+Open a terminal and type the following commands (after the $ prompts):
+$ export ML_PATH="$HOME/ml"      # You can change the path if you prefer
+$ mkdir -p $ML_PATH 
+You will need a number of Python modules: Jupyter, NumPy, Pandas, Matplotlib, and Scikit-Learn. 
+'''
+
 
 # End
 # ***********************
