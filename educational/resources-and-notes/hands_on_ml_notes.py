@@ -19,7 +19,9 @@ elements such as variable or function names, databases, data types, environment 
 3. Constant width bold Shows commands or other text that should be typed literally by the user.
 4. Constant width italic Shows text that should be replaced with user-supplied values or by values determined by context.
 
-Note that when the code examples display some outputs, then these code examples are shown with Python prompts (>>> and ...), as in a Python shell, to clearly distinguish the code from the outputs. For example, this code defines the square() function then it computes and displays the square of 3:
+Note that when the code examples display some outputs, then these code examples are shown with Python prompts (>>> and ...),
+as in a Python shell, to clearly distinguish the code from the outputs.
+For example, this code defines the square() function then it computes and displays the square of 3:
 >>> def square(x):
  ...     return x ** 2 
  ... 
@@ -250,6 +252,12 @@ $ mkdir -p $ML_PATH
 You will need a number of Python modules: Jupyter, NumPy, Pandas, Matplotlib, and Scikit-Learn. 
 '''
 
+# Creating a test set
+'''
+pick some instances randomly, typically 20% of the dataset (or less if your dataset is very large), and set them aside
+
+Code available in Chp_2_ML_Proj.ipynb
+'''
 
 # End
 # ***********************
