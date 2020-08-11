@@ -257,6 +257,8 @@ You will need a number of Python modules: Jupyter, NumPy, Pandas, Matplotlib, an
 pick some instances randomly, typically 20% of the dataset (or less if your dataset is very large), and set them aside
 
 Code available in Chp_2_ML_Proj.ipynb
+
+Different implementations P. 81-82
 '''
 
 # End

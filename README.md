@@ -13,4 +13,5 @@ Current technologies in use:<br>
 <li>numpy</li>
 <li>IPython</li>
 <li>matplotlib</li>
+<li>zlib</li>
 </ol>
