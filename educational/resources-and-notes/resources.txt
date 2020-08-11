@@ -11,6 +11,6 @@ https://www.youtube.com/watch?v=ya5NwvKafDk
 
 Daily Python-ML schedule:
 1 deeplearning.ai course - Video: C1W2L07
-2 Hands on Machine Learning book - Page: 84
+2 Hands on Machine Learning book - Page: 85
 3 Hands on coding - N/A
 4 MIT course - Lecture: 3 / Lab Session 1 Part 2
