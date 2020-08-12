@@ -85,12 +85,30 @@ Code from C1W2L11:
 import numpy as np
 import time
 
+# This code implements vectorized and non-vectorized versions of the same calculation
+# to compare with time
+# Vectorized:
 a = np.random.rand(1000000)
 b = np.random.rand(1000000)
 tic = time.time()
 c = np.dot(a,b)
 toc = time.time()
 
+print(c)
 print("Vectorized version:" + str(1000*(toc-tic))+"ms")
+
+# Non-Vectorized:
+
+tic = time.time()
+for i in range(1000000):
+    c +=a[i]*b[i]
+    toc = time.time()
+
+print(c)
+print("non-vectorized:" + str(1000*(toc-tic))+"ms")
+'''
+
+# Vectorization extended
+'''
 
 '''
