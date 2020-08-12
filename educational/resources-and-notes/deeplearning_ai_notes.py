@@ -30,7 +30,31 @@ When solving for derivatives in practice generally the most important variable i
 Derivative information C1W2L08 especially around 6-7 minutes.
 '''
 
-# Gradient descent using derivatives
+# Gradient descent using derivatives (for logistic regression)
 '''
+Python variable names available in C1W2L09
+
+code:
+
+j=0
+dw1=0
+dw2=0
+db=0
+
+for i in m:
+    z^i = w^tx^i+b
+    a^i=sigmoid(z^i)
+    j+= -[y^iloga^i+(1-y^i)log(1-a^i)]
+    dz^i = a^i-y^i
+    dw1+=x1^idz^i
+    dw2+=x2^idz^i
+    db+=dz^i
+j/=m
+dw1 /= m
+dw2 /= m
+db /= m
+
+However, the weakness with this method is that you need to add one line in for each additional value of x. This can be fixed
+with vectorization. (Getting rid of for loops)
 
 '''
