@@ -63,5 +63,34 @@ Vectorization available below
 
 # Vectorization (Removing for loops)
 '''
+C1W2L11
+
+In logistic you need to compute z = w^t X tb where w = [...] and x is also [...]
+
+Vectorization is much faster than non-vectorization
+
+Non vectorized:
+z=0
+for i in range(n-x):
+    z += w[i]*x[i]
+z +=b
+
+Vectorized:
+import numpy as np
+
+z = np.dot(w,x) # computes w transpose x
+
+Code from C1W2L11:
+
+import numpy as np
+import time
+
+a = np.random.rand(1000000)
+b = np.random.rand(1000000)
+tic = time.time()
+c = np.dot(a,b)
+toc = time.time()
+
+print("Vectorized version:" + str(1000*(toc-tic))+"ms")
 
 '''
