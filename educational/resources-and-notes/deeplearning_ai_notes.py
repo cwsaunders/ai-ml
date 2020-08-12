@@ -19,7 +19,9 @@ Used when Y = 0 or Y = 1 (e.g binary classification problems)
 Video C1W2L01 explains. Also available online.
 w = n dimensional vector (weights)
 b = real number (regression coefficients)
-
+In code, when computing " dFindOutputVar / dvar " for derivatives. -- represents the derivative of the final output variable
+you care about with respect to different intermediaries in your code.
+this is represented by "dvar"
 '''
 
 # Computing derivatives
