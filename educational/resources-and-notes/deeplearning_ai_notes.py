@@ -54,7 +54,14 @@ dw1 /= m
 dw2 /= m
 db /= m
 
+Code available in C1W2L11^
 However, the weakness with this method is that you need to add one line in for each additional value of x. This can be fixed
 with vectorization. (Getting rid of for loops)
+Vectorization available below
+
+'''
+
+# Vectorization (Removing for loops)
+'''
 
 '''
