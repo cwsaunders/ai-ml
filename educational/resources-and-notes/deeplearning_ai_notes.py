@@ -22,4 +22,8 @@ b = real number (regression coefficients)
 
 '''
 
-# 
+# Computing derivatives
+'''
+When solving for derivatives in practice generally the most important variable is your output variable. (C1W2L08 -- info)
+Derivative information C1W2L08 especially around 6-7 minutes.
+'''
