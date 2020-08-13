@@ -267,6 +267,24 @@ housing.dropna(subset=["total_bedrooms"])    # option 1
 housing.drop("total_bedrooms", axis=1)       # option 2
 median = housing["total_bedrooms"].median()  # option 3
 housing["total_bedrooms"].fillna(median, inplace=True) # option 3 continued
+
+sklearn module available (shown in proj 2)
+'''
+
+# Transforming into numerical data
+'''
+The following paragraph describes a situation where categories are not implicitly more different based on increasing or decreasing
+numbers:
+One issue with this representation is that ML algorithms will assume that two nearby values are more similar than two distant values.
+This may be fine in some cases (e.g., for ordered categories such as “bad”, “average”, “good”, “excellent”),
+but it is obviously not the case for the ocean_proximity column
+(for example, categories 0 and 4 are clearly more similar than categories 0 and 1).
+To fix this issue, a common solution is to create one binary attribute per category:
+one attribute equal to 1 when the category is “<1H OCEAN” (and 0 otherwise),
+another attribute equal to 1 when the category is “INLAND” (and 0 otherwise),
+and so on. This is called one-hot encoding, because only one attribute will be equal to 1 (hot),
+while the others will be 0 (cold). The new attributes are sometimes called dummy attributes.
+Scikit-Learn provides a OneHotEn coder class to convert categorical values into one-hot vectors20
 '''
 
 # End
