@@ -289,7 +289,7 @@ Scikit-Learn provides a OneHotEn coder class to convert categorical values into 
 Transforming class example available in sklearn-transformer-class.py in the hands_on_ml folder
 Useful for hyperparameters
 
-transforming vectorization tools also shown in use in Chp_2_ML_Proj.ipynb in a more simplistic form
+transforming vectorization tools also shown in use in Chp_2_ML_Proj.ipynb in a more simplistic form. -- MORE INFO ON P. 98 OF TEXT
 '''
 
 # End
