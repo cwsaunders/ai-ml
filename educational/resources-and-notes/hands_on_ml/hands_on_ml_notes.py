@@ -313,5 +313,12 @@ However, standardization is much less affected by outliers. For example, suppose
 whereas standardization would not be much affected. Scikit-Learn provides a transformer called StandardScaler for standardization.
 '''
 
+# Scikit-Learn Pipieline module (More transformation of data)
+'''
+Scikit-Learn provides the Pipeline class to help with sequences of transformations. 
+
+
+'''
+
 # End
 # ***********************
