@@ -304,7 +304,10 @@ Scikit-Learn provides a transformer called MinMaxScaler for this. It has a featu
 range if you don't want 0-1 for some reason.
 
 Standardization:
-
+first it subtracts the mean value (so standardized values always have a zero mean),
+and then it divides by the standard deviation so that the resulting distribution has unit variance.
+Unlike min-max scaling, standardization does not bound values to a specific range,
+which may be a problem for some algorithms (e.g., neural networks often expect an input value ranging from 0 to 1)
 '''
 
 # End
