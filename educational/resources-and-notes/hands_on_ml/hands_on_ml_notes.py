@@ -292,5 +292,20 @@ Useful for hyperparameters
 transforming vectorization tools also shown in use in Chp_2_ML_Proj.ipynb in a more simplistic form. -- MORE INFO ON P. 98 OF TEXT
 '''
 
+# Min-Max Scaling (also called normalization) and/or standardization
+'''
+ML models tend not to perform well when different attributes have significantly different scale. i.g one attribute ranges from
+1-100,000 and another attribute ranges from 0-10. The two common ways to solve this are min-max scaling and standardization
+
+Min-Max:
+Values are shifted and rescaled so that they end up ranging from 0 to 1.
+This is done by subtracting the min value and dividing by the max minus the min.
+Scikit-Learn provides a transformer called MinMaxScaler for this. It has a feature_range hyperparameter that lets you change the
+range if you don't want 0-1 for some reason.
+
+Standardization:
+
+'''
+
 # End
 # ***********************
