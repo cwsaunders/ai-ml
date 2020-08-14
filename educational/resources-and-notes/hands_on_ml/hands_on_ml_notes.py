@@ -285,6 +285,11 @@ another attribute equal to 1 when the category is “INLAND” (and 0 otherwise)
 and so on. This is called one-hot encoding, because only one attribute will be equal to 1 (hot),
 while the others will be 0 (cold). The new attributes are sometimes called dummy attributes.
 Scikit-Learn provides a OneHotEn coder class to convert categorical values into one-hot vectors20
+
+Transforming class example available in sklearn-transformer-class.py in the hands_on_ml folder
+Useful for hyperparameters
+
+transforming vectorization tools also shown in use in Chp_2_ML_Proj.ipynb in a more simplistic form
 '''
 
 # End
