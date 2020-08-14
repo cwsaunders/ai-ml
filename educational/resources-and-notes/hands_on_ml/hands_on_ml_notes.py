@@ -308,6 +308,9 @@ first it subtracts the mean value (so standardized values always have a zero mea
 and then it divides by the standard deviation so that the resulting distribution has unit variance.
 Unlike min-max scaling, standardization does not bound values to a specific range,
 which may be a problem for some algorithms (e.g., neural networks often expect an input value ranging from 0 to 1)
+However, standardization is much less affected by outliers. For example, suppose a district had a median income equal to 100
+(by mistake). Min-max scaling would then crush all the other values from 0–15 down to 0–0.15,
+whereas standardization would not be much affected. Scikit-Learn provides a transformer called StandardScaler for standardization.
 '''
 
 # End
