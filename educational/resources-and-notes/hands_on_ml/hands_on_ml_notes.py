@@ -320,5 +320,13 @@ Scikit-Learn provides the Pipeline class to help with sequences of transformatio
 
 '''
 
+# Fine tuning the model
+'''
+Grid Search: Code available in project. Best used on smaller projects, as it is resource intensive
+Randomized Search: Best used in larger projects, uses estimation and randomization. Code available in project
+'''
+
+# Additional notes available in chapter 2 project (jupyter notebook)
+
 # End
 # ***********************
