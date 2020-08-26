@@ -8,6 +8,17 @@ Other resources to look into:
 3. kaggle.com (ML competition website)
 '''
 
+# Instances
+'''
+when you have the training data, you can think of it as a set of instances.
+Consider the problem of email classification into spam/not spam.
+So in your training data, you have a set of pairs (x, y)
+where each x represents the set of values or features which correspond to a particular email, for example,
+x can be a vector representation of an email which tells about the existence or non existence
+of few particular words which might help for the classification of email and y tells you whether that email is spam or not spam.
+Here the pair (x,y) is called an instance.
+'''
+
 # Conventions used within the book
 '''
 The following typographical conventions are used in this book:
