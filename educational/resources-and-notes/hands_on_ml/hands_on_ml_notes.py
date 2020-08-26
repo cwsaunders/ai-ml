@@ -330,3 +330,15 @@ Randomized Search: Best used in larger projects, uses estimation and randomizati
 
 # End
 # ***********************
+
+# Chapter 3
+
+# MNIST Dataset
+'''
+Often referred to as the "hello world" of machine learning. Probably the most popular dataset of all time.
+
+70,000 small images of digits written by high school students and US Census Bereau workers. Each image is labeled with the digit 
+it represents.
+
+'''
+
