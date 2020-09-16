@@ -356,5 +356,8 @@ it represents.
 # ROC Curve (reciever operating characteristic curve)
 '''
 A common tool used with binary classifiers. It is similar to precision/recall curve, but instead of plotting precision vs recall
-the ROC curve plots the true positive rate
+the ROC curve plots the true positive rate (recall) against the false positive rate. The FPR (False positive rate) is the ratio of
+negative instances that are incorrectly classified as positive.
+It is equal to one minus the true negative rate, which is the ratio of negative instances that are correctly classified as negative.
+The TNR is also called specificity. 
 '''
