@@ -353,3 +353,8 @@ it represents.
 
 '''
 
+# ROC Curve (reciever operating characteristic curve)
+'''
+A common tool used with binary classifiers. It is similar to precision/recall curve, but instead of plotting precision vs recall
+the ROC curve plots the true positive rate
+'''
