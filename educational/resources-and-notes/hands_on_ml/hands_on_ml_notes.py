@@ -361,3 +361,21 @@ negative instances that are incorrectly classified as positive.
 It is equal to one minus the true negative rate, which is the ratio of negative instances that are correctly classified as negative.
 The TNR is also called specificity. 
 '''
+
+# confusion matrix / how to work on misclassified data
+'''
+Now you can clearly see the kinds of errors the classifier makes. Remember that rows
+represent actual classes, while columns represent predicted classes. The column for
+class 8 is quite bright, which tells you that many images get misclassified as 8s. How‐
+ever, the row for class 8 is not that bad, telling you that actual 8s in general get prop‐
+erly classified as 8s. As you can see, the confusion matrix is not necessarily
+symmetrical. You can also see that 3s and 5s often get confused (in both directions).
+Analyzing the confusion matrix can often give you insights on ways to improve your
+classifier. Looking at this plot, it seems that your efforts should be spent on reducing
+the false 8s. For example, you could try to gather more training data for digits that
+look like 8s (but are not) so the classifier can learn to distinguish them from real 8s.
+Or you could engineer new features that would help the classifier—for example, writ‐
+ing an algorithm to count the number of closed loops (e.g., 8 has two, 6 has one, 5 has
+none). Or you could preprocess the images (e.g., using Scikit-Image, Pillow, or
+OpenCV) to make some patterns stand out more, such as closed loops.
+'''
