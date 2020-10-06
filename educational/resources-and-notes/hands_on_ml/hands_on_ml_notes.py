@@ -379,3 +379,19 @@ ing an algorithm to count the number of closed loops (e.g., 8 has two, 6 has one
 none). Or you could preprocess the images (e.g., using Scikit-Image, Pillow, or
 OpenCV) to make some patterns stand out more, such as closed loops.
 '''
+
+# Linear Regression (Math)
+'''
+(((
+    PAGE 141:
+This can be written much more concisely using a vectorized form, as shown in Equa‐
+tion 4-2.
+Equation 4-2. Linear Regression model prediction (vectorized form)
+y = hθx = θ · x
+• θ is the model’s parameter vector, containing the bias term θ0 and the feature weights θ1 to θn.
+• x is the instance’s feature vector, containing x0 to xn, with x0 always equal to 1.
+• θ · x is the dot product of the vectors θ and x, which is of course equal to θ0x0 + θ1 x1+ θ2x2+ ⋯ + θnxn.
+• hθ
+ is the hypothesis function, using the model parameters θ.
+)))
+ '''
