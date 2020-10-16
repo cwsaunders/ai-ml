@@ -36,5 +36,10 @@ print("predict")
 print(lin_reg.predict(X_new))
 
 # least squares class
-theta_best_svd, residuals, rank, s = np.linalg.lstsq(X_b,y,rcond=1e-6)
+theta_best_svd, residuals, rank, s = np.linalg.lstsq(X_b,y,rcond=1e-6) # computes theta hat = (X^+)y --> X^+ is the pseudoinverse of X
 print("theta best svd\n", theta_best_svd)
+
+# compute using np.linalg.pinv() to gather psuedoinverse directly
+print("np.linalg.pinv")
+print(np.linalg.pinv(X_b).dot(y))
+
