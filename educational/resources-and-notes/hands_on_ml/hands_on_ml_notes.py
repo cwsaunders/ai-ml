@@ -409,3 +409,13 @@ Normal Equation, plus it handles edge cases nicely: indeed, the Normal Equation 
 not work if the matrix XTX is not invertible (i.e., singular), such as if m < n or if some
 features are redundant, but the pseudoinverse is always defined.
 '''
+
+# Normal equation / computational complexity (big O)
+'''
+The Normal Equation computes the inverse of XT X, which is an (n + 1) × (n + 1)
+matrix (where n is the number of features). The computational complexity of inverting
+such a matrix is typically about O(n2.4) to O(n3) (depending on the implementation).In other words, if you double the number of features,
+you multiply the computationtime by roughly 22.4 = 5.3 to 23 = 8.
+The SVD approach used by Scikit-Learn’s LinearRegression class is about O(n2). If you double the number of features,
+you multiply the computation time by roughly 4.
+'''
