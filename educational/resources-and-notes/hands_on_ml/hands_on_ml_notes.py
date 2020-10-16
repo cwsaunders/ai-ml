@@ -395,3 +395,17 @@ y = hθx = θ · x
  is the hypothesis function, using the model parameters θ.
 )))
  '''
+
+ # Pseudoinverse computation
+ '''
+The pseudoinverse itself is computed using a standard matrix factorization technique
+called Singular Value Decomposition (SVD) that can decompose the training set
+matrix X into the matrix multiplication of three matrices U Σ VT
+(see numpy.linalg.svd()). The pseudoinverse is computed as X+= VΣ+UT. To computethe matrix Σ+
+, the algorithm takes Σ and sets to zero all values smaller than a tiny
+threshold value, then it replaces all the non-zero values with their inverse, and finally
+it transposes the resulting matrix. This approach is more efficient than computing the
+Normal Equation, plus it handles edge cases nicely: indeed, the Normal Equation may
+not work if the matrix XTX is not invertible (i.e., singular), such as if m < n or if some
+features are redundant, but the pseudoinverse is always defined.
+ '''
