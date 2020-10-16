@@ -32,3 +32,9 @@ lin_reg.fit(X,y) # fit model
 print("lin_reg:")
 print(lin_reg.intercept_)
 print(lin_reg.coef_)
+print("predict")
+print(lin_reg.predict(X_new))
+
+# least squares class
+theta_best_svd, residuals, rank, s = np.linalg.lstsq(X_b,y,rcond=1e-6)
+print("theta best svd\n", theta_best_svd)
