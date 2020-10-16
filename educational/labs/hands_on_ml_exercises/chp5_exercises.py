@@ -18,8 +18,17 @@ y_predict = X_new_b.dot(theta_best)
 print(y_predict)
 
 # plot predictions
-
+'''
 plt.plot(X_new, y_predict, "r-")
 plt.plot(X,y,"b.")
 plt.axis([0,2,0,15])
 plt.show()
+'''
+# linear regression
+from sklearn.linear_model import LinearRegression
+
+lin_reg = LinearRegression() # create model
+lin_reg.fit(X,y) # fit model
+print("lin_reg:")
+print(lin_reg.intercept_)
+print(lin_reg.coef_)
