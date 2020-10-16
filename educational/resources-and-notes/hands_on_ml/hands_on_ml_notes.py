@@ -397,7 +397,7 @@ y = hθx = θ · x
  '''
 
  # Pseudoinverse computation
- '''
+'''
 The pseudoinverse itself is computed using a standard matrix factorization technique
 called Singular Value Decomposition (SVD) that can decompose the training set
 matrix X into the matrix multiplication of three matrices U Σ VT
@@ -408,4 +408,4 @@ it transposes the resulting matrix. This approach is more efficient than computi
 Normal Equation, plus it handles edge cases nicely: indeed, the Normal Equation may
 not work if the matrix XTX is not invertible (i.e., singular), such as if m < n or if some
 features are redundant, but the pseudoinverse is always defined.
- '''
+'''
