@@ -43,3 +43,15 @@ print("theta best svd\n", theta_best_svd)
 print("np.linalg.pinv")
 print(np.linalg.pinv(X_b).dot(y))
 
+# Implementation of gradient descent
+eta = 0.1
+n_iterations = 1000
+m = 100
+
+theta = np.random.randn(2,1)
+
+for iteration in range(n_iterations):
+    gradients = 2/m * X_b.T.dot(X_b.dot(theta) - y)
+    theta = theta - eta * gradients
+
+print("theta:\n", theta)
