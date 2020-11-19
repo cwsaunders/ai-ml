@@ -97,8 +97,7 @@ for epoch in range(n_epochs):
         eta = learning_schedule(epoch*m+i)
         theta = theta - eta * gradients
 
-<<<<<<< HEAD
+print("eta:", eta)
+print("theta: ", theta)
+
 # ********
-=======
-# ********
->>>>>>> 52d5e729327ea232d0270e5575f4d66e31d64c1f
